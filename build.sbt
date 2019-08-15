@@ -19,5 +19,8 @@ lazy val root = (project in file(".")).
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
+enablePlugins(AshScriptPlugin)
 
 mainClass in Compile := Some("com.example.WebServerHttpApp")
+
+dockerBaseImage      := "openjdk:jre-alpine"
