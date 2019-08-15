@@ -19,3 +19,5 @@ lazy val root = (project in file(".")).
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
+
+mainClass in Compile := Some("com.example.WebServerHttpApp")
